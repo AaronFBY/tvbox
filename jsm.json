@@ -1,0 +1,103 @@
+{
+    "spider": "./pg.jar",
+    "sites": [
+        {
+			"key": "豆瓣",
+			"name": "豆瓣",
+			"type": 3,
+			"api": "csp_Douban",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs":1,
+			"ext": "./lib/douban.json"
+		},
+        {
+            "key": "HongGuo",
+            "name": "🎬 红果短剧",
+            "type": 3,
+            "api": "./py/hongguo.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 0,
+            "timeout": 60,
+            "playerType": 2
+        },
+        {
+            "key": "HongGuo1",
+            "name": "红果短剧优化",
+            "type": 3,
+            "api": "./py/hongguo(1).py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 0,
+            "timeout": 60,
+            "playerType": 2
+        },
+        {
+            "key": "webdav_quark",
+            "name": "📂 webdav夸克网盘",
+            "type": 3,
+            "api": "csp_WebDAV",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "drives": [
+                    {
+                        "name": "夸克",
+                        "server": "http://127.0.0.1:5244/dav",
+                        "user": "admin",
+                        "pass": "admin123",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "alist_quark",
+            "name": "AList夸克网盘",
+            "type": 3,
+            "api": "csp_AList",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                  "drives": [
+                    {
+                      "name": "alist",
+                      "search": true,
+                      "searchable": true,
+                      "server": "http://127.0.0.1:5244",
+                      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+                    }
+                  ]
+                }
+        },
+
+        {
+            "key": "FloatSpider",
+            "name": "悬浮按钮",
+            "type": 3,
+            "api": "csp_FloatSpider",
+            "ext": "/storage/emulated/0/tvbox_alist/py",
+            "jar": "./lib/float-spider.jar"
+        },
+        {
+            "key": "local_video",
+            "name": "📁 本地视频",
+            "type": 3,
+            "api": "csp_Local",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./local"
+        }
+
+    ],
+    "lives": [],
+    "parses": [],
+    "rules": [],
+    "drives": []
+}
